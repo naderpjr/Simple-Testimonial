@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+    font-family: "Inter", sans-serif;
+}
+.testi {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial{
+    width: 1000px;
+    height: 600px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.testimonial-pic {
+    position: absolute;
+    width: 480px;
+    right: 40px;
+}
+.testimonial-pic>img {
+    width: 300px;
+    transform: translate(30px, -40px);
+}
+.testimonial-pic>img:first-child {
+    position: relative;
+}
+.testimonial-pic>img:nth-child(2) {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 340px;
+}
+.testimonial-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    bottom: 10%;
+    right: 40%;
+    box-shadow: 1px 6px 15px #00000087;
+}
+.testimonial-btn img {
+    cursor: pointer;
+}
+.prev .next{
+    width: 50px;
+    height: 50px;
+}
+.testimonial-text {
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+}
+.testimonial-text img {
+    z-index: -2;
+    position: relative;
+}
+.testimonial-text p {
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+}
+.author-job {
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.author-job p {
+    font-size: 18px;
+}
+.author-job p:nth-child(2) {
+    margin-left: 130px;
+}
+
+@media(max-width: 1030px){
+    .testimonial-pic {
+        right: 0;
+    }
+}
+@media(max-width: 888px){
+    .testi {
+        display: none;
+    }
+}
